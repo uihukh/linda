@@ -40,7 +40,7 @@ function f() {
     console.log('-111111111111-------trong f -----------');
     kiusi();
     console.log(Date()); 
-    setTimeout( f, 30000 ); 
+    setTimeout( f, 200000 ); 
     console.log('--tttttttttt--') 
 }
 
