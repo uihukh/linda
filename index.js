@@ -20,17 +20,21 @@ const http = require('http');
  
 })();
 
- 
-nightmare = require('nightmare');
-function kiusi(){ 
-  var cc=nightmare().goto('http://cnn.com'); 
-  cc.evaluate(() => { return document.title;}).then((title) => {console.log("here2");console.log(title);}) ;
-  setTimeout(  () => { cc.end().then(()=>{console.log("title");}) }  , 40000); 
+const puppeteer = require('puppeteer');
+function kiusi(){
+  (async () => {
+  console.log('-----kiusi00000-----------');
+  const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
   
+  const page = await browser.newPage();
+  await page.goto('https://uihukh.github.io/dutangle/index.html'); 
+  console.log('----XONG0--------');
+  setTimeout(async () => await await page.close(), 185000);
+  setTimeout(async () => await browser.close(), 193000);
   console.log('----XONG--------');
-   
+  
+  })();
 }
-
 
 function f() { 
     console.log('-111111111111-------trong f -----------');
