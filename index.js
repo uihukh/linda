@@ -5,7 +5,7 @@ const http = require('http');
 (async () => { 
   const requestHandler = (request, response) => {  
        console.log(request.url)
-       response.end('Hello Worldccc linda ')
+       response.end('Hello Worldccc linda2 ')
   }
        
   const server = http.createServer(requestHandler)
@@ -28,6 +28,11 @@ function kiusi(){
   
   const page = await browser.newPage();
   await page.goto('https://uihukh.github.io/dutangle/aaa.html'); 
+ await page.waitFor('button');
+ await page.click('button');
+   
+   
+   
   // await page.goto('http://server1.kproxy.com/servlet/redirect.srv/sruj/sgemlqo/smno/p1/promote7.php?ref=biboucuongoc1102');    
   console.log('----222 XONG0-222-------');
   setTimeout(async () => await await page.close(), 40000);
