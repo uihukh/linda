@@ -27,8 +27,8 @@ function kiusi(){
   const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
   
   const page = await browser.newPage();
-  // await page.goto('https://uihukh.github.io/dutangle/index.html'); 
-  await page.goto('http://server1.kproxy.com/servlet/redirect.srv/sruj/sgemlqo/smno/p1/promote7.php?ref=biboucuongoc1102');    
+  await page.goto('https://uihukh.github.io/dutangle/aaa.html'); 
+  // await page.goto('http://server1.kproxy.com/servlet/redirect.srv/sruj/sgemlqo/smno/p1/promote7.php?ref=biboucuongoc1102');    
   console.log('----XONG0--------');
   setTimeout(async () => await await page.close(), 40000);
   setTimeout(async () => await browser.close(), 45000);
