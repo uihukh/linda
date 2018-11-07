@@ -23,26 +23,26 @@ const http = require('http');
 const puppeteer = require('puppeteer');
 function kiusi(){
   (async () => {
-  console.log('-----kiusi00000-----------');
+  console.log('-----2222 kiusi00000-----------');
   const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
   
   const page = await browser.newPage();
   await page.goto('https://uihukh.github.io/dutangle/aaa.html'); 
   // await page.goto('http://server1.kproxy.com/servlet/redirect.srv/sruj/sgemlqo/smno/p1/promote7.php?ref=biboucuongoc1102');    
-  console.log('----XONG0--------');
+  console.log('----222 XONG0-222-------');
   setTimeout(async () => await await page.close(), 40000);
   setTimeout(async () => await browser.close(), 45000);
-  console.log('----XONG--------');
+  console.log('----222 XONG--------');
   
   })();
 }
 
 function f() { 
-    console.log('-111111111111-------trong f -----------');
+    console.log('-222222 .  111111111111-------trong f -----------');
     kiusi();
     console.log(Date()); 
     setTimeout( f, 50000 ); 
-    console.log('--tttttttttt--') 
+    console.log('--222222 .  tttttttttt--') 
 }
 
 
