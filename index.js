@@ -27,9 +27,7 @@ function kiusi(){
   const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
   
   const page = await browser.newPage();
-  await page.goto('https://uihukh.github.io/dutangle/aaa.html'); 
- await page.waitFor('button');
- await page.click('button');
+  await page.goto('https://uihukh.github.io/dutangle/');  
    
    
    
