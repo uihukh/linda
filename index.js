@@ -5,7 +5,7 @@ const http = require('http');
 (async () => { 
   const requestHandler = (request, response) => {  
        console.log(request.url)
-       response.end('Hello Worldccc linda2 ')
+       response.end('Hello Worldccc linda333 ')
   }
        
   const server = http.createServer(requestHandler)
@@ -27,7 +27,7 @@ function kiusi(){
   const browser = await puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
   
   const page = await browser.newPage();
-  await page.goto('https://uihukh.github.io/dutangle/');  
+  await page.goto('https://tuhithaihau.github.io/site/');  
    
    
    
